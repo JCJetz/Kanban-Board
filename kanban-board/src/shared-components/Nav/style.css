@@ -1,0 +1,25 @@
+
+.nav__container {
+    display: flex;
+    gap: 42vw;
+    height: 60px;
+    background-color: #030328;
+    color: #ffffff;
+}
+
+.nav-logo {
+    margin: 5px 0px 5px 20px;
+    width: 50px; 
+}
+
+.nav-info__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+}
+
+

@@ -1,0 +1,59 @@
+
+.new-note__container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+    margin: 10px;
+}
+
+.text-area {
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #bab8b8;
+}
+
+.text-area:focus {
+    box-shadow: 0px 0px 5px 2px #2b7eb5;
+    outline: none;
+    border: 1px solid #8e8d8d;
+}
+
+.new-note-buttons__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.button {
+    width: 49%;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 1px #e1e0e0;
+}
+
+.add__button {
+    background-color: #70c890ff;
+    color: #ffffff7a;
+    border: 1px solid #72ce94;
+}
+
+.cancel__button {
+    background-color: #ecefed;
+    color: #333333;
+    border: 1px solid #c9cac9;
+}
+
+.cancel__button:active {
+    background-color: #e25151;
+    color: #ffffff;
+    border: 1px solid #f0301e;
+}

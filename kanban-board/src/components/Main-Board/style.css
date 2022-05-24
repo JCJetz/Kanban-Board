@@ -1,0 +1,42 @@
+.main-board__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.version-filter__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 15px;
+}
+
+.version-update__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 20px;
+    color: #030328;
+    font-size: 0.9rem;
+}
+
+.version {
+    font-weight: 500;
+}
+
+.last-update {
+    opacity: 0.8;
+}
+
+.filter-input {
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+
+}
+
+.card-boards__container {
+    display: flex;
+    gap: 15px;
+    margin: 10px 35px 35px 35px;
+    height: 100%;
+}
