@@ -4,9 +4,7 @@ import GenerateNewCard from '../../shared-components/Generate-New-Card';
 import Card from '../../shared-components/Card';
 
 
-function InProgressBoard () {
-
-
+const InProgressBoard = ({board}) => {
 
     return (
         <main className='todo-main__container'>
@@ -19,7 +17,9 @@ function InProgressBoard () {
             </header>
             <section>
                 <GenerateNewCard></GenerateNewCard>
-                <Card></Card>
+                {board.cards.map((item, index) => ( 
+                    <Card key={index} card={item}></Card>
+                ))}
             </section>
         </main>
     )

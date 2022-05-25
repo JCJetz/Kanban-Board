@@ -30,8 +30,9 @@
 .filter-input {
     height: 30px;
     width: 250px;
-    padding: 5px;
-
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 25px 0 0;
 }
 
 .card-boards__container {

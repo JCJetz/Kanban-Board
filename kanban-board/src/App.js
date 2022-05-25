@@ -4,6 +4,8 @@ import Footer from './shared-components/Footer';
 import MainBoard from './components/Main-Board';
 
 function App() {
+
+
   return (
     <div className="app">
       <Nav></Nav>

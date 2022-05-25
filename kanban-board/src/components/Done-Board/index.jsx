@@ -3,10 +3,7 @@ import {AiOutlinePlus} from 'react-icons/ai';
 import GenerateNewCard from '../../shared-components/Generate-New-Card';
 import Card from '../../shared-components/Card';
 
-
-function DoneBoard () {
-
-
+const DoneBoard = ({board,deleteCard}) => {
 
     return (
         <main className='todo-main__container'>
@@ -22,9 +19,9 @@ function DoneBoard () {
             </header>
             <section>
                 <GenerateNewCard></GenerateNewCard>
-                <Card></Card>
-                <Card></Card>
-                <Card></Card>
+                {board.cards.map((item, index) => ( 
+                    <Card key={index} boardid={board.id} card={item} deleteCard={deleteCard}></Card>
+                ))}
             </section>
         </main>
     )

@@ -23,10 +23,17 @@
     font-weight: 600;
     padding: 10px;
 }
+.title{
+    margin:10px;
+}
 
 .status {
     font-size: 1.2rem;
     color: #8ae2aaff;
+}
+
+.done {
+    color: #cb2431;
 }
 
 .delete-button {

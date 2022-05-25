@@ -3,20 +3,21 @@ import {ImBin2} from 'react-icons/im';
 import {SiTarget} from 'react-icons/si';
 
 
-function Card () {
+const Card = ({boardid, card, deleteCard}) => {    
 
     return (
         <main className='card__container'>
             <section className='card-section__container'>
                 <div className='info__container'>
-                    <SiTarget className='status'></SiTarget>
-                    <p className='title'>creacion del CI/CD para el frontal</p>
-                </div>
-                <ImBin2 className='delete-button'></ImBin2>
+                    <SiTarget className={`status ${card.status}`}></SiTarget>
+                    <p className='title'>{card?.title}</p>
+                </div>  
+                {/* onClick con arrow func o no funciona bien */}
+                <ImBin2 className='delete-button' onClick={() => deleteCard(boardid,card?.id)}></ImBin2>
             </section>
             <section className='details__container'>
-                <p className='id'>#23</p>
-                <p className='date'>created on 30/07/2021 8:34:54</p>
+                <p className='id'>#{card?.id}</p>
+                <p className='date'>Created at {card?.created_at}</p>
             </section>
         </main>
     )
